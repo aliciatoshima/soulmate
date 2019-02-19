@@ -4,10 +4,11 @@ $(document).ready(function() {
   if (height < 100) {
     $('.children').addClass("children2");
   }
-  else if (height <150) {
+  else if (height <180) {
     $('.teenagers').addClass("teenagers2");
+    $('.adults').addClass("adults2");
   }
   else {
-    $('.adults').addClass("adults2");
+    alert("Sorry, you're just too tall to ride any of our rides!");
   }
 });
