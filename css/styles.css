@@ -1,0 +1,16 @@
+/* #children, #teenagers, #adults {
+  display: none;
+} */
+
+.children2 {
+  background-color: green;
+}
+.teenagers2 {
+  background-color: yellow;
+}
+.adults2 {
+  background-color: pink;
+}
+/* #children {
+  display: none;
+} */
