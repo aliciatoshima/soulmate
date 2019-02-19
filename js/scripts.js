@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var height = parseInt(prompt("How tall are you? (In cm)"));
+
 
   if (height < 100) {
     $('.children').addClass("children2");
@@ -11,4 +11,34 @@ $(document).ready(function() {
   else {
     alert("Sorry, you're just too tall to ride any of our rides!");
   }
+});
+
+
+$(document).ready(function() {
+  $("form#politics").submit(function(event) {
+    var climate = parseInt($("#climate").val());
+    var peta = parseInt($("#peta").val());
+
+    var sum = climate + peta
+
+    if (sum === 0) {
+      alert('Please make a selection.');
+    }
+    else {
+      if (sum <= 2) {
+        $("#voter").empty().append("Conservative");
+        $("#answer").show();
+      }
+      else if (sum >2 && sum <5 ) {
+        $("#voter").empty().append("Neutral");
+        $("#answer").show();
+      }
+      else {
+        $("#voter").empty().append("Liberal");
+        $("#answer").show();
+      }
+    }
+
+    event.preventDefault();
+  });
 });

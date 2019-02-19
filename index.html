@@ -6,37 +6,39 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Amusement Park Rides</title>
+    <title>Polical Meter</title>
   </head>
   <body>
     <div class="container">
-      <div id="list">
-        <h1>Amusemnet Park Rides</h1>
-        <ul>
-          <li><span class="children">Petting Zoo</span></li>
-          <li><span class="children">Choo-Choo Train</span></li>
-          <li><span class="children">Fish for Goldfish</span></li>
-          <li><span class="adults">Roller Coasters</span></li>
-          <li><span class="teenagers">Ice Skating</span></li>
-          <li><span class="teenagers">Splash Mountain</span></li>
-          <li><span class="adults">Haunted House</span></li>
-        </ul>
+      <h1>How Liberal Aren't You?</h1>
+
+      <p>To tell you how un-conservative you are, we'll need you to fill out the form below:</p>
+
+      <form id="politics">
+        <label for="climate">Global Warming: Is global warming a real threat?</label>
+        <select class="form-control" id="climate">
+          <option value="0"></option>
+          <option value="1">Maybe, but I geel like the media really exaggerates things.</option>
+          <option value="2">I think it's real, but I don't think there's anything that can be done about it.</option>
+          <option value="3">Clearly, it's the biggest threat we face as a civilization, and we need tp change things now!</option>
+        </select><br>
+
+        <label for="peta">What do you think about PETA???</label>
+        <select class="form-control" id="peta">
+          <option value="0"></option>
+          <option value="1">What is PETA?</option>
+          <option value="2">They are kind of intense but have a great message.</option>
+          <option value="3">lIt's a great and honoranble organization committed to the noblest of causes.</option>
+        </select><br>
+
+
+        <button type="submit" class="btn btn-outline-dark">Calculate my quote</button>
+      </form><br>
+
+      <div id="answer">
+        <p>According to us, you are a <span id="voter"></span>.</p>
       </div>
-
-      <!-- <div id="children">
-        <h1>Amusemnet Park Rides</h1>
-
-
-        <ul>
-          <li><span class="children2">Petting Zoo</span></li>
-          <li><span class="children2">Choo-Choo Train</span></li>
-          <li><span class="children2">Fish for Goldfish</span></li>
-          <li>>Roller Coasters</li>
-          <li>>Ice Skating</li>
-          <li>Splash Mountain</li>
-          <li>Haunted Housean</li>
-        </ul>
-      </div> -->
+    </div>
 
 
   </body>
